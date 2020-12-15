@@ -9,7 +9,7 @@ RUN deluser --remove-home node && \
 
 # Install some additional packages
 RUN apk update && \
-    apk add --no-cache zsh=~5.8-r1 zsh-vcs=~5.8-r1 git=~2.26.2-r0 curl=~7.69.1-r3
+    apk add --no-cache zsh=~5.8-r1 zsh-vcs=~5.8-r1 git=~2.26.2-r0 curl=~7.69.1-r3 openssh=~8.3_p1-r1
 
 # Install oh-my-zsh
 RUN curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh --output install.sh && \
